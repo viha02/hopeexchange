@@ -1,0 +1,51 @@
+<html><head>
+
+  <link rel="stylesheet" href="css.css">
+
+  <!-- Plastic Exchange Page -->
+<div class="container">
+  <h1>HOPE-Nourishing Future</h1><h2>Plastic Exchange Program</h2>
+  <p>Exchange your plastic waste for a promo code to use on our website!</p>
+  <h2>Select a Plastic Category:</h2>
+  <ul>
+      <li>
+          <input type="radio" id="simple-plastics" name="category" value="simple-plastics">
+          <label for="simple-plastics">Simple Plastics</label>
+          <p>Exchange your everyday plastics, such as bottles, bags, and containers</p>
+      </li>
+      <li>
+          <input type="radio" id="hard-plastics" name="category" value="hard-plastics">
+          <label for="hard-plastics">Hard Plastics (Toys)</label>
+          <p>Exchange your toys and durable goods made from hard plastics</p>
+      </li>
+      <li>
+          <input type="radio" id="electronic-plastics" name="category" value="electronic-plastics">
+          <label for="electronic-plastics">Electronic Plastics</label>
+          <p>Exchange your electronic devices and components made from specialized plastics</p>
+      </li>
+  </ul>
+  <h2>Enter Plastic Details:</h2>
+  <form>
+      <label for="weight-quantity">Weight/Quantity:</label>
+      <input type="number" id="weight-quantity" name="weight-quantity">
+
+      <label for="condition">Condition:</label>
+      <select id="condition" name="condition">
+          <option value="good">Good</option>
+          <option value="fair">Fair</option>
+          <option value="poor">Poor</option>
+      </select>
+
+  <form id="plastic-exchange-form">
+    <label for="plastic-amount">How much plastic (in kg) would you like to exchange? Tell us and get your favorite plant!</label>
+    <input type="number" id="plastic-amount" name="plastic-amount" required>
+    <button type="submit">Exchange</button>
+  </form>
+  <div id="promo-code-container">
+    <h2>Here's your promo code:</h2>
+    <p id="promo-code"></p>
+  </div>
+</div>
+<script src="js.js"></script>
+</head>
+</html>
